@@ -1,8 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import React from 'react'
+import React from "react";
+import { Outlet } from "react-router-dom";
 
-export const AuthLayout = () => {
-  return (
-    <div>AuthLayout</div>
-  )
-}
+const AuthLayout = () => {
+    return (
+        <div className="min-h-screen justify-center flex items-center bg-gray-300">
+            <Outlet />
+        </div>
+    );
+};
+
+export default AuthLayout;
