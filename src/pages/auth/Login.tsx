@@ -25,6 +25,7 @@ const Login = () => {
                             className="w-full border border-green-200 outline-none py-2 px-8 rounded-lg mb-2"
                             id="email"
                             placeholder="E-mail"
+                            required
                         />
                     </div>
                     <div className="relative">
@@ -34,6 +35,7 @@ const Login = () => {
                             className="w-full border border-green-200 outline-none py-2 px-8 rounded-lg"
                             id="password"
                             placeholder="Password"
+                            required
                         />
                         {showPassword ? (
                             <RiEyeOffLine

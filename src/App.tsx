@@ -8,9 +8,12 @@ import ForgetPassword from "./pages/auth/ForgetPassword";
 import ChangePassword from "./pages/auth/ChangePassword";
 import Error from "./pages/404";
 import Home from "./pages/Home";
+import Navbar from "./layouts/portfolio/Navbar";
 
 const App = () => {
     return (
+        <div>
+        
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<AuthLayout />}>
@@ -20,9 +23,13 @@ const App = () => {
                     <Route path="forget-password" element={<ForgetPassword />} />
                     <Route path="change-password/:token" element={<ChangePassword />} />
                 </Route>
-            <Route path="*" element={<Error />}></Route>
+                
+                <Route path="navbar" element={<Navbar />} />
+                {/* </Route> */}
+                <Route path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
+        </div>
     );
 };
 
