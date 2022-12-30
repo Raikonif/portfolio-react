@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 //layouts
 import AuthLayout from "./layouts/auth/AuthLayout";
 //pages
@@ -12,9 +12,9 @@ import Navbar from "./layouts/portfolio/Navbar";
 
 const App = () => {
     return (
-        <div>
         
         <BrowserRouter>
+            <Navbar />
             <Routes>
                 <Route path="/" element={<AuthLayout />}>
                     <Route index element={<Home />} />
@@ -25,11 +25,9 @@ const App = () => {
                 </Route>
                 
                 <Route path="navbar" element={<Navbar />} />
-                {/* </Route> */}
                 <Route path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
-        </div>
     );
 };
 
