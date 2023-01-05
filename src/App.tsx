@@ -24,7 +24,7 @@ const App = () => {
                     <Route path="change-password/:token" element={<ChangePassword />} />
                 </Route>
                 
-                <Route path="navbar" element={<Navbar />} />
+                {/* <Route path="navbar" element={<Navbar />} /> */}
                 <Route path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
