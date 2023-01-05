@@ -14,8 +14,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    //extra configs
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    },
+    "experimentalDecorators": true
   },
-  "include": ["src"],
+  // "include": ["src"],
+  "include": ["tsconfig.json", "**/*.ts", "**/*.tsx", "typed-css.d.ts"],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
