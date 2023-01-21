@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
-
 	const handleNav = () => {
 		setNav(!nav);
 	};
@@ -14,11 +14,21 @@ const Navbar = () => {
 				Raikonif Portfolio
 			</h1>
 			<ul className="hidden md:flex">
-				<li className="p-4">Home</li>
-				<li className="p-4">Skills</li>
-				<li className="p-4">Contact</li>
-				<li className="p-4">About</li>
-				<li className="p-4">Blog</li>
+				<Link to="/">
+					<li className="p-4">Home</li>
+				</Link>
+				<Link to="/login">
+					<li className="p-4">Blog</li>
+				</Link>
+				<Link to="/skills">
+					<li className="p-4">Skills</li>
+				</Link>
+				<Link to="/Contact">
+					<li className="p-4">Contact</li>
+				</Link>
+				<Link to="/About">
+					<li className="p-4">About</li>
+				</Link>
 			</ul>
 			<div onClick={handleNav} className="block md:hidden">
 				{nav ? (
