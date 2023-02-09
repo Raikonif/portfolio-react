@@ -1,11 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
-import { AxiosInterceptor } from './interceptor/axios.interceptors';
+import React, { Children } from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import { AxiosInterceptor } from "./interceptor/axios.interceptors";
 
-AxiosInterceptor();
-
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-    <App />
+const root = ReactDOM.createRoot(
+	document.getElementById("root") as HTMLElement
+);
+root.render(
+	<App />
 );
