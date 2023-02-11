@@ -1,6 +1,5 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
-
 import figma from "./assets/images/Skills/figma.png";
 import sketch from "./assets/images/Skills/sketch.png";
 import ps from "./assets/images/Skills/ps.png";
@@ -59,17 +58,17 @@ export const content = {
   ],
   hero: {
     title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
+    firstName: "Diego",
+    LastName: "Alarcon",
     btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
       {
-        count: "8+",
+        count: "1+",
         text: "Years of Experinse in Web development",
       },
       {
-        count: "20+",
+        count: "2+",
         text: "Projects Worked in my career",
       },
     ],
@@ -79,17 +78,17 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
-        name: "Figma",
+        name: "Kotlin",
         para: "Lorem ipsum text  dummy",
         logo: figma,
       },
       {
-        name: "Node js",
+        name: "Javascript",
         para: "Lorem ipsum text  dummy",
         logo: nodejs,
       },
       {
-        name: "Adobe Photoshop",
+        name: "Android Studio",
         para: "Lorem ipsum text  dummy",
         logo: ps,
       },
