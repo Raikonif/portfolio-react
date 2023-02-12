@@ -7,7 +7,7 @@ const service = axios.create({
 });
 
 const onRequest = (config: AxiosRequestConfig): AxiosRequestConfig => {
-    const localStorageSession = getSession();
+    const localStorageSession = "getSession()";
     if (localStorageSession) {
         config.headers.Authorization = localStorageSession;
     }
