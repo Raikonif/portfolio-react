@@ -17,7 +17,7 @@ import options from "../layouts/portfolio/options";
 const AppRouter = () => {
 	return (
 		<>
-			<Navbar options={options} />
+			{/* <Navbar options={options} /> */}
 			<Routes>
 				<Route path="/" element={<SectionsLayout />}>
 					<Route index element={<Home />} />
