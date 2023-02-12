@@ -14,11 +14,11 @@ const App = () => {
 		<>
 			<Hero />
 			<Skills />
-			<Hireme />
 			<Services />
 			<Projects />
-			<Contact />
 			<Testimonials />
+			<Hireme />
+			<Contact />
 		</>
 		// <BrowserRouter>
 		// 	<AppRouter />

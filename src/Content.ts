@@ -59,7 +59,8 @@ export const content = {
   hero: {
     title: "Web Developer",
     firstName: "Diego",
-    LastName: "Alarcon",
+    LastName: "Alarcón",
+    LastName2: "Inturias",
     btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
@@ -185,31 +186,31 @@ export const content = {
     subtitle: "FOR YOUR PROJECTS",
     image1: Hireme_person,
     image2: Hireme_person2,
-    para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+    para: "Im a professional web developer. Ihave 1+ years of experience in web development. I have worked on projects for clients.",
     btnText: "Hire Me",
   },
   Contact: {
-    title: "Contect Me",
+    title: "Contact Me",
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "codeaprogram@gmail.com",
+        text: "raikonif@gmail.com",
         icon: GrMail,
-        link: "mailto:codeaprogram@gmail.com",
+        link: "mailto:raikonif@gmail.com",
       },
       {
-        text: "+91 1234 56778",
+        text: "+591 63142527",
         icon: MdCall,
-        link: "https://wa.me/1234567890",
+        link: "https://wa.me/+59163142527",
       },
       {
-        text: "codeaprogram",
+        text: "Raikonif",
         icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
+        link: "https://www.instagram.com/raikonif/",
       },
     ],
   },
   Footer: {
-    text: "All © Copy Right Reserved 2022",
+    text: "All © Copy Right Reserved 2023",
   },
 };
