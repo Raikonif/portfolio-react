@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { useState } from "react";
 
-function Testimonials() {
+function Testimonials(): JSX.Element {
 	const { Testimonials } = content;
 	const [activeIndex, setActiveIndex] = useState(0);
 	return (

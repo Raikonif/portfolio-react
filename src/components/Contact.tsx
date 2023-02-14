@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import { PUBLIC_KEY } from "../constants/service.constants";
 
-function Contact() {
+function Contact(): JSX.Element {
 	const { Contact } = content;
 	const form = useRef<any>();
 

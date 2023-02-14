@@ -7,11 +7,11 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { content } from "../Content";
 
-function Projects() {
+function Projects(): JSX.Element {
 	const { Projects } = content;
 
 	return (
-		<section id="projects" className="bg-bg_light_primary">
+		<section id="projects" className="bg-primaryLinear">
 			<div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
 				<div>
 					<h2 className="title" data-aos="fade-down">

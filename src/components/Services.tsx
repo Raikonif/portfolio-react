@@ -1,7 +1,7 @@
 import React from "react";
 import { content } from "../Content";
 
-function Services() {
+function Services(): JSX.Element {
 	const { services } = content;
 	return (
 		<section id="services">

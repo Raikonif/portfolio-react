@@ -33,7 +33,7 @@ function Skills() {
 	}
 
 	return (
-		<section className="min-fit bg-bg_light_primary">
+		<section className="min-fit bg-primaryLinear">
 			<Modal
 				isOpen={modalIsOpen}
 				onRequestClose={closeModal}

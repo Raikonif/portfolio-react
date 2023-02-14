@@ -1,6 +1,6 @@
 import React from "react";
 import { content } from "../Content";
-function Hero() {
+function Hero(): JSX.Element {
 	const { hero } = content;
 	return (
 		<section>

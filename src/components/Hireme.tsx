@@ -1,6 +1,6 @@
 import { content } from "../Content";
 
-const Hireme = () => {
+function Hireme(): JSX.Element {
 	const { Hireme } = content;
 
 	return (
@@ -41,6 +41,6 @@ const Hireme = () => {
 			</div>
 		</section>
 	);
-};
+}
 
 export default Hireme;
