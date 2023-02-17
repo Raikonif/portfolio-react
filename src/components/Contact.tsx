@@ -1,7 +1,7 @@
 import { createElement, useRef } from "react";
 import { content } from "../Content";
 import emailjs from "@emailjs/browser";
-import toast, { Toaster } from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast"					
 import { PUBLIC_KEY } from "../constants/service.constants";
 
 function Contact(): JSX.Element {
@@ -21,9 +21,7 @@ function Contact(): JSX.Element {
 			.then(
 				result => {
 					console.log(result.text);
-					// Clear all input field values
 					form.current.reset();
-					// Success toast message
 					toast.success("Email send Successfully");
 				},
 				error => {
