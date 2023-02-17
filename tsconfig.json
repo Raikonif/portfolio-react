@@ -23,7 +23,7 @@
     "experimentalDecorators": true
   },
   // "include": ["src"],
-  "include": ["tsconfig.json", "**/*.ts", "**/*.tsx", "typed-css.d.ts"],
+  "include": ["tsconfig.json", "**/*.ts", "**/*.tsx", "typed-css.d.ts", "assets"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
