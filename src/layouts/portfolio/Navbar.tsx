@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { IconType } from "react-icons/lib";
 import { Link } from "react-router-dom";
 
 interface Options {
-	name: string;
 	link: string;
+	icon: any;
 }
 interface Iprops {
 	options: Options[];
 }
 
-function Navbar({ options }: Iprops): JSX.Element {
+function Navbar(): JSX.Element {
 	const [nav, setNav] = useState(false);
 	const handleNav = () => {
 		setNav(!nav);
