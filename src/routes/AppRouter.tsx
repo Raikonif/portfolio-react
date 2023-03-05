@@ -15,34 +15,28 @@ import Navbar from "../layouts/portfolio/Navbar";
 import options from "../layouts/portfolio/options";
 
 const AppRouter = () => {
-	return (
-		<>
-			{/* <Navbar options={options} /> */}
-			<Routes>
-				<Route path="/" element={<SectionsLayout />}>
-					<Route index element={<Home />} />
-					<Route path="Blog" element={<Blog />} />
-					<Route path="Contact" element={<Contact />} />
-					<Route path="About" element={<About />} />
-					<Route path="Skills" element={<Skills />} />
-				</Route>
-				<Route path="/auth" element={<AuthLayout />}>
-					<Route path="login" element={<Login />} />
-					<Route path="register" element={<Register />} />
-					<Route
-						path="forget-password"
-						element={<ForgetPassword />}
-					/>
-					<Route
-						path="change-password/:token"
-						element={<ChangePassword />}
-					/>
-				</Route>
+  return (
+    <>
+      {/* <Navbar options={options} /> */}
+      <Routes>
+        <Route path="/" element={<SectionsLayout />}>
+          <Route index element={<Home />} />
+          <Route path="Blog" element={<Blog />} />
+          <Route path="Contact" element={<Contact />} />
+          <Route path="About" element={<About />} />
+          <Route path="Skills" element={<Skills />} />
+        </Route>
+        <Route path="/auth" element={<AuthLayout />}>
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="forget-password" element={<ForgetPassword />} />
+          <Route path="change-password/:token" element={<ChangePassword />} />
+        </Route>
 
-				<Route path="*" element={<Error />} />
-			</Routes>
-		</>
-	);
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </>
+  );
 };
 
 export default AppRouter;

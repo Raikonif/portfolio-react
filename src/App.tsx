@@ -11,26 +11,26 @@ import Navbar from "./layouts/portfolio/Navbar";
 import AppRouter from "./routes/AppRouter2";
 
 const App = () => {
-	return (
-		// <>
-		// 	{/* <Navbar options={[]} /> */}
-		// 	<Hero />
-		// 	<Skills />
-		// 	<Services />
-		// 	<Projects />
-		// 	<Testimonials />
-		// 	<Hireme />
-		// 	<Contact />
-		// 	<footer className="text-center">
-		// 		<h6 className="mb-3">Diego Alarcon Inturias</h6>
-		// 		<p>Raikonif All Corporyght Reserved</p>
-		// 	</footer>
-		// </>
+  return (
+    // <>
+    // 	{/* <Navbar options={[]} /> */}
+    // 	<Hero />
+    // 	<Skills />
+    // 	<Services />
+    // 	<Projects />
+    // 	<Testimonials />
+    // 	<Hireme />
+    // 	<Contact />
+    // 	<footer className="text-center">
+    // 		<h6 className="mb-3">Diego Alarcon Inturias</h6>
+    // 		<p>Raikonif All Corporyght Reserved</p>
+    // 	</footer>
+    // </>
 
-		<BrowserRouter>
-			<AppRouter />
-		</BrowserRouter>
-	);
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
+  );
 };
 
 export default App;

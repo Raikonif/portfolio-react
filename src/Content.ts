@@ -25,37 +25,35 @@ import avatar4 from "./assets/images/Testimonials/avatar4.png";
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
 
-import icons from "react-icons"
 import { GrMail } from "react-icons/gr";
-import { MdArrowForward, MdCall } from "react-icons/md";
+import { MdArrowForward, MdCall, MdOutlinePermContactCalendar } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
-import { MdOutlinePermContactCalendar } from "react-icons/md";
 
 export const content = {
   nav: [
     {
       link: "#home",
-      icon: TbSmartHome,
+      icon: TbSmartHome
     },
     {
       link: "#skills",
-      icon: BiUser,
+      icon: BiUser
     },
     {
       link: "#services",
-      icon: RiServiceLine,
+      icon: RiServiceLine
     },
     {
       link: "#projects",
-      icon: RiProjectorLine,
+      icon: RiProjectorLine
     },
     {
       link: "#contact",
-      icon: MdOutlinePermContactCalendar,
-    },
+      icon: MdOutlinePermContactCalendar
+    }
   ],
   hero: {
     title: "Web Developer",
@@ -67,13 +65,13 @@ export const content = {
     hero_content: [
       {
         count: "1+",
-        text: "Years of Experinse in Web development",
+        text: "Years of Experinse in Web development"
       },
       {
         count: "2+",
-        text: "Projects Worked in my career",
-      },
-    ],
+        text: "Projects Worked in my career"
+      }
+    ]
   },
   skills: {
     title: "Skills",
@@ -82,35 +80,35 @@ export const content = {
       {
         name: "Kotlin",
         para: "Lorem ipsum text  dummy",
-        logo: figma,
+        logo: figma
       },
       {
         name: "Javascript",
         para: "Lorem ipsum text  dummy",
-        logo: nodejs,
+        logo: nodejs
       },
       {
         name: "Android Studio",
         para: "Lorem ipsum text  dummy",
-        logo: ps,
+        logo: ps
       },
       {
         name: "React js",
         para: "Lorem ipsum text  dummy",
-        logo: reactjs,
+        logo: reactjs
       },
       {
         name: "Sketch",
         para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        logo: sketch
       },
       {
         name: "Python",
         para: "Lorem ipsum text  dummy",
-        logo: python,
-      },
+        logo: python
+      }
     ],
-    icon: MdArrowForward,
+    icon: MdArrowForward
   },
   services: {
     title: "Services",
@@ -119,19 +117,19 @@ export const content = {
       {
         title: "Web Development",
         para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo1,
+        logo: services_logo1
       },
       {
         title: "ui / ux DESIGNING",
         para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo2,
+        logo: services_logo2
       },
       {
         title: "PhotoShop Editing",
         para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo3,
-      },
-    ],
+        logo: services_logo3
+      }
+    ]
   },
   Projects: {
     title: "Projects",
@@ -140,17 +138,17 @@ export const content = {
     project_content: [
       {
         title: "Gym Website",
-        image: project1,
+        image: project1
       },
       {
         title: "Social Media web",
-        image: project2,
+        image: project2
       },
       {
         title: "Creative Website",
-        image: project3,
-      },
-    ],
+        image: project3
+      }
+    ]
   },
   Testimonials: {
     title: "Testimonials",
@@ -160,27 +158,27 @@ export const content = {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar1,
-        name: "JOHN DOE",
+        name: "JOHN DOE"
       },
       {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar2,
-        name: "Tom Alex",
+        name: "Tom Alex"
       },
       {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar3,
-        name: "Johnny",
+        name: "Johnny"
       },
       {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar4,
-        name: "ROBBIN",
-      },
-    ],
+        name: "ROBBIN"
+      }
+    ]
   },
   Hireme: {
     title: "Hire Me",
@@ -188,7 +186,7 @@ export const content = {
     image1: Hireme_person,
     image2: Hireme_person2,
     para: "Im a professional web developer. Ihave 1+ years of experience in web development. I have worked on projects for clients.",
-    btnText: "Hire Me",
+    btnText: "Hire Me"
   },
   Contact: {
     title: "Contact Me",
@@ -197,21 +195,21 @@ export const content = {
       {
         text: "raikonif@gmail.com",
         icon: GrMail,
-        link: "mailto:raikonif@gmail.com",
+        link: "mailto:raikonif@gmail.com"
       },
       {
         text: "+591 63142527",
         icon: MdCall,
-        link: "https://wa.me/+59163142527",
+        link: "https://wa.me/+59163142527"
       },
       {
         text: "Raikonif",
         icon: BsInstagram,
-        link: "https://www.instagram.com/raikonif/",
-      },
-    ],
+        link: "https://www.instagram.com/raikonif/"
+      }
+    ]
   },
   Footer: {
-    text: "All © Copy Right Reserved 2023",
-  },
+    text: "All © Copy Right Reserved 2023"
+  }
 };
