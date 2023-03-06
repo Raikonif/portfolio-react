@@ -4,8 +4,8 @@ function Hireme(): JSX.Element {
   const { Hireme } = content;
 
   return (
-    <section className="bg-bg_light_primary" id="hireme">
-      <div className="md:container px-5 pt-14">
+    <section id="hireme" className="min-fit w-full">
+      <div className="md:container px-2 pt-14 w-full justify-center">
         <h2 className="title" data-aos="fade-down">
           {Hireme.title}
         </h2>
@@ -13,7 +13,7 @@ function Hireme(): JSX.Element {
           {Hireme.subtitle}
         </h4>
         <br />
-        <div className="flex items-center md:flex-row flex-col-reverse ">
+        <div className=" w-full flex items-center md:flex-row flex-col-reverse ">
           <img
             src={Hireme.image1}
             alt="..."
@@ -27,13 +27,13 @@ function Hireme(): JSX.Element {
             className="max-w-sm md:hidden"
           />
           <div
-            data-aos="fade-left"
+            data-aos="fade-down"
             className="border-2 border-dark_primary max-w-sm
            p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem]"
           >
-            <p className="leading-7">{Hireme.para}</p>
+            <p className="leading-5">{Hireme.para}</p>
             <br />
-            <button className="btn bg-dark_primary text-white">
+            <button className="btn dark:text-dark_primary">
               {Hireme.btnText}
             </button>
           </div>

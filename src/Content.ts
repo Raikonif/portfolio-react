@@ -7,6 +7,10 @@ import ps from "./assets/images/Skills/ps.png";
 import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
+import kotlin from "./assets/images/Skills/kotlin.png";
+import android from "./assets/images/Skills/android.png";
+import fastapi from "./assets/images/Skills/fastapi.png";
+import javascript from "./assets/images/Skills/javascript.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -27,12 +31,27 @@ import Hireme_person2 from "./assets/images/Hireme/person2.png";
 
 import { GrMail } from "react-icons/gr";
 import { MdArrowForward, MdCall, MdOutlinePermContactCalendar } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram, BsFillSunFill } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
-import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
+import { RiServiceLine, RiProjectorLine, RiMacbookFill } from "react-icons/ri";
+import { FaMoon } from "react-icons/fa";
 
 export const content = {
+  buttons: [
+    {
+      icon: FaMoon,
+      text: "dark"
+    },
+    {
+      icon: BsFillSunFill,
+      text: "light"
+    },
+    {
+      icon: RiMacbookFill,
+      text: "system"
+    }
+  ],
   nav: [
     {
       link: "#home",
@@ -56,16 +75,20 @@ export const content = {
     }
   ],
   hero: {
-    title: "Web Developer",
-    firstName: "Diego",
-    LastName: "Alarcón",
-    LastName2: "Inturias",
+    title: "SOFTWARE DEVELOPER",
+    firstName: "DIEGO",
+    LastName: "ALARCÓN",
+    LastName2: "INTURIAS",
     btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
       {
         count: "1+",
         text: "Years of Experinse in Web development"
+      },
+      {
+        count: "1+",
+        text: "Years of Experience in Mobile development"
       },
       {
         count: "2+",
@@ -79,33 +102,62 @@ export const content = {
     skills_content: [
       {
         name: "Kotlin",
-        para: "Lorem ipsum text  dummy",
-        logo: figma
+        para: "I used this lengauge to develop my first mobile app",
+        logo: kotlin,
+        description: [
+          "Kotlin is a statically typed programming language that runs on the Java virtual machine and also can be compiled to JavaScript source code or use the LLVM compiler infrastructure.",
+          "Kotlin is a general-purpose, free and open-source programming language that is specifically designed for the development of Android applications.",
+          "Kotlin is a statically typed programming language that runs on the Java virtual machine and also can be compiled to JavaScript source code or use the LLVM compiler infrastructure.",
+          "Kotlin is a general-purpose, free and open-source programming language that is specifically designed for the development of Android applications."
+        ]
       },
       {
         name: "Javascript",
-        para: "Lorem ipsum text  dummy",
-        logo: nodejs
+        para: "I have experience in this language to develop web apps",
+        logo: javascript,
+        description: [
+          "JavaScript, often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification.",
+          "JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.",
+          "Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production; the majority of websites employ it, and all modern Web browsers support it without the need for plug-ins by means of a built-in JavaScript engine."
+        ]
       },
       {
-        name: "Android Studio",
-        para: "Lorem ipsum text  dummy",
-        logo: ps
+        name: "Android",
+        para: "I Worked with Android Studio and Kotlin to develop my multiple apps",
+        logo: android,
+        description: [
+          "Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development.",
+          "It is available for download on Windows, macOS and Linux based operating systems.",
+          "Android Studio provides the fastest tools for building apps on every type of Android device."
+        ]
       },
       {
         name: "React js",
-        para: "Lorem ipsum text  dummy",
-        logo: reactjs
+        para: "I Worked with this Library in Team Projects and for my personal projects",
+        logo: reactjs,
+        description: [
+          "React is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies.",
+          "React can be used as a base in the development of single-page or mobile applications.",
+          "However, React is only concerned with rendering data to the DOM, and so creating React applications usually requires the use of additional libraries for state management and routing."
+        ]
       },
       {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch
+        name: "Fast API",
+        para: "I have experience in this framework in team projects",
+        logo: fastapi,
+        description: [
+          "FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.",
+          "The key features are: Fast: Very high performance, on par with NodeJS and Go (thanks to Starlette and Pydantic)."
+        ]
       },
       {
         name: "Python",
-        para: "Lorem ipsum text  dummy",
-        logo: python
+        para: "I know this language to develop my personal projects and team projects",
+        logo: python,
+        description: [
+          "Python is an interpreted, high-level and general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.",
+          "Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects."
+        ]
       }
     ],
     icon: MdArrowForward

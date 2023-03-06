@@ -1,6 +1,7 @@
 import React, { createElement, useState } from "react";
 import { content } from "../Content";
 import Modal from "react-modal";
+import About from "../pages/About/About";
 
 const customStyles = {
   content: {
@@ -11,7 +12,11 @@ const customStyles = {
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
     maxWidth: "23rem",
-    width: "90%"
+    width: "90%",
+    text: "white",
+    borderRadius: "1rem",
+    background: "#00BCD4",
+    border: "1px solid #ccc"
   },
   overlay: {
     padding: "2rem"
@@ -33,7 +38,10 @@ function Skills() {
   }
 
   return (
-    <section className="min-fit bg-primaryLinear" id="skills">
+    <section
+      className="min-fit w-full bg-dark_primary dark:bg-primarySoftDark"
+      id="skills"
+    >
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -41,32 +49,32 @@ function Skills() {
       >
         <div className="flex items-center gap-2">
           <img className="h-10" src={selectSkill?.logo} alt="..." />
-          <h6>{selectSkill?.name}</h6>
+          <h6 className="!text-white">{selectSkill?.name}</h6>
         </div>
         <br />
         <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7">
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-          <li>Lorem ipsum dolor sit, ame.</li>
-          <li>Lorem ipsum dolor sit, amet consectetur</li>
-          <li>
-            Lorem ipsum dolor sit, amet dolor sit, amet consectetur adipisicing.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad est
-            beatae quos rem.
-          </li>
+          {selectSkill?.description.map((description: string, i: number) => (
+            <li key={i}>{description}</li>
+          ))}
         </ul>
         <br />
         <div className="flex justify-end">
-          <button onClick={closeModal} className="btn">
+          <button
+            onClick={closeModal}
+            className="btn bg-dark_primary_dark dark:bg-dark_primary_dark !text-white"
+          >
             Close
           </button>
         </div>
       </Modal>
 
       {/* Content */}
-      <div className="md:container px-5 py-14">
-        <h2 className="title" data-aos="fade-down" data-aos-delay="1000">
+      <div className="md:container px-5 py-14 ">
+        <h2
+          className="title !text-white "
+          data-aos="fade-down"
+          data-aos-delay="1000"
+        >
           {skills.title}
         </h2>
         <h4 className="subtitle" data-aos="fade-down" data-aos-delay="1000">
@@ -100,7 +108,7 @@ function Skills() {
                 }}
               >
                 <h6>{skill.name}</h6>
-                <p className="italic">{skill.para}</p>
+                <p className="italic !text-white">{skill.para}</p>
                 <div className="text-xl absolute top-3 right-3">
                   {createElement(skills.icon)}
                 </div>

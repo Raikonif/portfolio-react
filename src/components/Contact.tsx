@@ -32,7 +32,7 @@ function Contact(): JSX.Element {
   };
 
   return (
-    <section className="bg-dark_primary text-white" id="contact">
+    <section className="bg-dark_primary_dark text-white" id="contact">
       <Toaster />
       <div className="md:container px-5 py-14">
         <h2 className="title !text-white" data-aos="fade-down">
@@ -55,7 +55,7 @@ function Contact(): JSX.Element {
               name="from_name"
               placeholder="Name"
               required
-              className="border border-slate-600 p-3 rounded"
+              className="border border-slate-600 dark:border-dark_primary p-3 rounded"
             />
             <input
               type="email"
@@ -63,17 +63,17 @@ function Contact(): JSX.Element {
               pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
               placeholder="Email Id"
               required
-              className="border border-slate-600 p-3 rounded"
+              className="border border-slate-600 dark:border-dark_primary p-3 rounded"
             />
             <textarea
               name="message"
               placeholder="Message"
-              className="border border-slate-600 p-3 rounded h-44"
+              className="border border-slate-600 dark:border-dark_primary p-3 rounded h-44"
               required
             ></textarea>
             <button
               className="btn self-start
-            bg-white text-dark_primary"
+            !bg-dark_primary dark:!bg-dark_primary_dark"
             >
               Submit
             </button>
