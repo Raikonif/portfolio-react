@@ -208,7 +208,7 @@ export const content = {
     testimonials_content: [
       {
         review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
+          "“Was a good project done and i loved the results”",
         img: avatar1,
         name: "JOHN DOE"
       },

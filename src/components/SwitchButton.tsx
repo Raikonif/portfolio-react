@@ -35,7 +35,7 @@ function SwitchButton() {
   }, [theme]);
 
   darkQuery.addEventListener("change", e => {
-    ("theme" in localStorage && e.matches)
+    "theme" in localStorage && e.matches
       ? docElement.classList.add("dark")
       : docElement.classList.remove("dark");
   });
